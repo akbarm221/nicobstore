@@ -1,0 +1,366 @@
+/* e7e6e1 */
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+*,html,body {
+    padding: 0;
+    margin:0;
+    overflow: hidden;
+}
+
+.fcontainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #e7e6e1;
+}
+
+.wrapper {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-navbar {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding:15px;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+.ul-navbar>a>li:hover {
+    color: #ff7944;
+    transition: all .2s ease-in-out;
+  }
+
+.li-navbar {
+    display: flex;
+    padding: 5px 35px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+
+}
+
+.logo {
+    padding: 20px ;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Sofia Sans', sans-serif;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.container-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.child-content1{
+    padding-left: 100px;
+    padding-top: 90px;
+}
+
+
+img {
+    width: 400px;
+    height: 400px;
+    padding-right: 90px;
+    padding-top: 40px;
+    
+}
+
+.h1-content {
+    font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+    color: #ff7944;
+}
+
+.h1-content2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 60px;
+    color: #000;
+}
+
+.p-content1 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: 600 ;
+    font-size: 18px;
+    max-width: 500px;
+}
+
+.p-content2 {
+    padding-top:5px;
+    font-family: 'Sofia Sans', sans-serif;
+    max-width: 500px;
+    font-size: 18px;
+}
+
+/* .block {
+    background-color: black;
+    position: absolute;
+    width: 300px;
+    height: 500px;
+} */
+.p-footer{
+    color: black;
+    font-family: 'Sofia Sans', sans-serif ;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007958;
+    height:75px;
+    margin-top: 50px;
+}
+
+/* Button */
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff7944;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  }
+  /* button end */
+
+  
+
+@media screen and (max-width: 600px) {
+    *,html,body {
+        padding: 0;
+        margin:0;
+        overflow: hidden;
+    }
+    
+    .fcontainer {
+        height: 100vh;
+        width: 100%;
+        background-color: #e7e6e1;
+    }
+    
+    .wrapper {
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    
+    .ul-navbar {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        padding:15px 5px;
+    }
+    
+    .li-navbar {
+        display: flex;
+        padding: 5px 7px;
+        color: white;
+        font-size: 12px;
+        font-family: 'Sofia Sans', sans-serif;
+        font-weight: bold;
+        color: #007958;
+    
+    }
+    
+    .logo {
+        padding: 20px ;
+        font-size: 12px;
+        font-weight: bold;
+        font-family: 'Sofia Sans', sans-serif;
+        letter-spacing: 2px;
+    }
+    
+    .container-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .child-content1{
+        padding: 0;
+        margin: 0;
+        padding-top: 20px;
+        text-align: center;
+    }
+    
+    img {
+        width: 300px;
+        height: 300px;
+        padding-top: 90px;
+        padding-left: 35px;
+
+        
+    }
+    
+    .h1-content {
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        color: #007958;
+        
+    }
+    
+    .h1-content2 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 30px;
+        color: #007958;
+    }
+    
+    .p-content1 {
+        font-family: 'Sofia Sans', sans-serif;
+        font-weight: 600 ;
+        font-size: 18px;
+        max-width: 500px;
+    }
+    
+    .p-content2 {
+        padding-top:5px;
+        font-family: 'Sofia Sans', sans-serif;
+        max-width: 500px;
+        font-size: 18px;
+    }
+    
+    /* .block {
+        background-color: black;
+        position: absolute;
+        width: 300px;
+        height: 500px;
+    } */
+    .p-footer{
+        color: white;
+        font-family: 'Sofia Sans', sans-serif ;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007958;
+        height:30px;
+        margin-top: 50px;
+    }
+    
+}
